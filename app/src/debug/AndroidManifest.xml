@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Spike 005: launched via adb, never shipped (debug source set only) -->
+        <activity
+            android:name="com.example.spike.BillingSpikeActivity"
+            android:exported="true" />
+    </application>
+</manifest>

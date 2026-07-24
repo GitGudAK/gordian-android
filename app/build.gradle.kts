@@ -108,6 +108,8 @@ dependencies {
   // implementation(libs.googleid)
   implementation(libs.firebase.appcheck.recaptcha)
   implementation(libs.kotlinx.coroutines.android)
+  // Spike 005 (play-billing-model): debug-only BillingClient connect probe
+  debugImplementation("com.android.billingclient:billing-ktx:8.0.0")
   implementation(libs.kotlinx.coroutines.core)
   implementation(libs.logging.interceptor)
   implementation(libs.moshi.kotlin)
