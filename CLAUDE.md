@@ -16,6 +16,10 @@ The iOS product (shipped) and the Cloudflare Workers proxy live in the separate 
   (3 warnings, then 5 min / 30 min / 24 h locks).
 - For UI changes: build and screenshot on the emulator, get user approval BEFORE committing.
 
+## Auto-load routing
+
+- **Spike findings for gordian-android** (implementation patterns, constraints, gotchas) → `Skill("spike-findings-gordian-android")`
+
 ## State
 
 - `.planning/spikes/` — modernization spikes (numbering continues from the iOS spike series at 005).
