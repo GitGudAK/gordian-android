@@ -1,0 +1,17 @@
+*.iml
+.gradle
+.kotlin
+local.properties
+/.idea
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+.env
+*.jks
+*.keystore
+google-services.json
+
+# Spike runtime artifacts
+.planning/spikes/**/*-log.json
