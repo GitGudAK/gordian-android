@@ -22,4 +22,12 @@ The iOS product (shipped) and the Cloudflare Workers proxy live in the separate 
 
 ## State
 
-- `.planning/spikes/` — modernization spikes (numbering continues from the iOS spike series at 005).
+GSD-managed project. Read before acting:
+- `.planning/STATE.md` — current position, open concerns
+- `.planning/ROADMAP.md` — 7 phases (Foundation → Console clock → Session → Safety → Logs → Monetization → Ship)
+- `.planning/REQUIREMENTS.md` — 30 REQ-IDs, traceability
+- `.planning/PROJECT.md` — decisions, constraints, out-of-scope
+- `.planning/research/` — stack/features/architecture/pitfalls
+- `.planning/spikes/` — modernization spikes (numbering continues from the iOS spike series at 005)
+
+Workflow: `/gsd-plan-phase N` → `/gsd-execute-phase N` → verify, per phase in order (Phase 2 runs concurrently with 3–6).

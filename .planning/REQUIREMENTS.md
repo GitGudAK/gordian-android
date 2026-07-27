@@ -72,4 +72,38 @@ research (STACK/FEATURES/ARCHITECTURE/PITFALLS), and spike findings 005–007.
 
 ## Traceability
 
-(Filled by roadmap.)
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| FND-01 | Phase 1 | Pending |
+| FND-02 | Phase 1 | Pending |
+| FND-03 | Phase 1 | Pending |
+| STO-01 | Phase 2 | Pending |
+| STO-02 | Phase 2 | Pending |
+| STO-04 | Phase 2 | Pending |
+| SES-01 | Phase 3 | Pending |
+| SES-02 | Phase 3 | Pending |
+| SES-03 | Phase 3 | Pending |
+| SES-04 | Phase 3 | Pending |
+| SES-05 | Phase 3 | Pending |
+| CPY-02 | Phase 3 | Pending |
+| SES-06 | Phase 4 | Pending |
+| SES-07 | Phase 4 | Pending |
+| SAF-01 | Phase 4 | Pending |
+| SAF-02 | Phase 4 | Pending |
+| SAF-03 | Phase 4 | Pending |
+| DAT-01 | Phase 5 | Pending |
+| DAT-02 | Phase 5 | Pending |
+| DAT-03 | Phase 5 | Pending |
+| DAT-04 | Phase 5 | Pending |
+| MON-01 | Phase 6 | Pending |
+| MON-02 | Phase 6 | Pending |
+| MON-03 | Phase 6 | Pending |
+| MON-04 | Phase 6 | Pending |
+| MON-05 | Phase 6 | Pending |
+| MON-06 | Phase 6 | Pending |
+| CPY-01 | Phase 7 | Pending |
+| STO-03 | Phase 7 | Pending |
+| STO-05 | Phase 7 | Pending |
+
+**Coverage:** 30/30 v1 requirements mapped. No orphans, no duplicates.
+*Mapped by roadmap 2026-07-25.*
