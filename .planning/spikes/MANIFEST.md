@@ -17,6 +17,13 @@ Design decisions locked in by the user. Non-negotiable for the real build.
 - Operator coupon capability required: lifetime gifts and 3-month gifts (mechanism may differ from
   iOS offer/promo codes — spike 005 decides the Play-native mapping).
 - No AI mentions in user-facing copy.
+- On-device path requirements (transferred from the iOS on-device validation, 2026-07-26 — knowledge only, no artifacts):
+  (1) Gordian's own refuse-and-strike gate must run on-device — platform guardrails de-escalate
+  instead of refusing; (2) classification must be structurally constrained — Android has no
+  @Generable equivalent, so JSON prompting + strict validation + repair ladder; (3) on the
+  on-device path NOTHING leaves the phone — no proxy calls, no strike pings; privacy is the
+  headline. Hybrid engine (on-device when capable, proxy otherwise) is mandatory on Android
+  given the flagship-only floor.
 
 ## Spikes
 
@@ -25,3 +32,4 @@ Design decisions locked in by the user. Non-negotiable for the real build.
 | 005 | play-billing-model | standard | Given Play Billing primitives (one subscription product + base plans/offers; promo-code limits), when we map monthly/annual/lifetime + coupon strategy onto them, then BillingClient connects on an emulator and every iOS entitlement has a working Play equivalent | VALIDATED (mapping complete; BillingClient binds, clean code=3 signed-out; full flow needs Play Console + signed-in account) | [billing, play-console, monetization] |
 | 006 | android-toolchain-build | standard | Given this Intel Mac (no Android Studio installed), when we install the toolchain and run the Gradle build, then the existing app compiles and boots on an emulator | VALIDATED (assembleDebug first try; boots on API 36 Play-image emulator; toolchain was 90% present) | [toolchain, gradle, emulator] |
 | 007 | proxy-client-kotlin | standard | Given the live proxy, when Kotlin/OkHttp calls /session-plan with X-Device-ID, then all modes decode (BINARY/YES_NO/SENSITIVE/TOO_BIG/LOCKED) and lockout state round-trips | VALIDATED (4/4 live tests: BINARY, TOO_BIG knots, SENSITIVE risk+lockout, verdict) | [proxy, okhttp, contract] |
+| 008 | gemini-nano-feasibility | standard | Given a Nano-capable physical device, when a Gordian-shaped battery runs on-device via ML Kit GenAI Prompt API (plan + verdict per dilemma, incl. edge dilemmas), then JSON discipline, latency, and groundedness meet the bar set by the iOS on-device path | PENDING (GATED: needs a physical flagship — emulators don't run AICore; device unconfirmed) | [on-device, gemini-nano, aicore, hybrid-engine] |
